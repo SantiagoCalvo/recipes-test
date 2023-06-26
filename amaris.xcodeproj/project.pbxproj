@@ -10,23 +10,26 @@
 		9A3235BB2A48CC2300E2DF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235BA2A48CC2300E2DF27 /* AppDelegate.swift */; };
 		9A3235BD2A48CC2300E2DF27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235BC2A48CC2300E2DF27 /* SceneDelegate.swift */; };
 		9A3235BF2A48CC2300E2DF27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235BE2A48CC2300E2DF27 /* ViewController.swift */; };
-		9A3235C22A48CC2300E2DF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3235C02A48CC2300E2DF27 /* Main.storyboard */; };
 		9A3235C42A48CC2400E2DF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3235C32A48CC2400E2DF27 /* Assets.xcassets */; };
 		9A3235C72A48CC2400E2DF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3235C52A48CC2400E2DF27 /* LaunchScreen.storyboard */; };
-		9A3235D22A48CC2400E2DF27 /* amarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235D12A48CC2400E2DF27 /* amarisTests.swift */; };
-		9A3235DC2A48CC2400E2DF27 /* amarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235DB2A48CC2400E2DF27 /* amarisUITests.swift */; };
-		9A3235DE2A48CC2400E2DF27 /* amarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235DD2A48CC2400E2DF27 /* amarisUITestsLaunchTests.swift */; };
+		9A3235ED2A48CE2100E2DF27 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235EC2A48CE2100E2DF27 /* Recipe.swift */; };
+		9A3235F02A48DBD800E2DF27 /* RecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235EF2A48DBD800E2DF27 /* RecipeLoader.swift */; };
+		9A3235F22A48DC1800E2DF27 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235F12A48DC1800E2DF27 /* HTTPClient.swift */; };
+		9A3235F42A48DC3800E2DF27 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235F32A48DC3800E2DF27 /* URLSessionHTTPClient.swift */; };
+		9A3235F62A48DCB400E2DF27 /* RemoteRecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235F52A48DCB400E2DF27 /* RemoteRecipeLoader.swift */; };
+		9A3235F82A48E3EF00E2DF27 /* RemoteRecipeSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235F72A48E3EF00E2DF27 /* RemoteRecipeSearchLoader.swift */; };
+		9A3235FA2A48E4AD00E2DF27 /* RemoteRecipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235F92A48E4AD00E2DF27 /* RemoteRecipeItem.swift */; };
+		9A3235FD2A48E4FA00E2DF27 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235FC2A48E4FA00E2DF27 /* RecipesViewController.swift */; };
+		9A3235FF2A48E9AF00E2DF27 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3235FE2A48E9AF00E2DF27 /* RecipeCell.swift */; };
+		9A3236012A48F59E00E2DF27 /* UIView+shimering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3236002A48F59E00E2DF27 /* UIView+shimering.swift */; };
+		9A3236032A48F89200E2DF27 /* RemoteRecipeImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3236022A48F89200E2DF27 /* RemoteRecipeImageDataLoader.swift */; };
+		9A3236062A48FC0000E2DF27 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3236052A48FC0000E2DF27 /* MainQueueDispatchDecorator.swift */; };
+		9A3236082A49012E00E2DF27 /* RecipeImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3236072A49012E00E2DF27 /* RecipeImageDataLoader.swift */; };
+		9A32360A2A490A6500E2DF27 /* SearchRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3236092A490A6500E2DF27 /* SearchRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9A3235CE2A48CC2400E2DF27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A3235AF2A48CC2300E2DF27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A3235B62A48CC2300E2DF27;
-			remoteInfo = amaris;
-		};
-		9A3235D82A48CC2400E2DF27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A3235AF2A48CC2300E2DF27 /* Project object */;
 			proxyType = 1;
@@ -40,15 +43,24 @@
 		9A3235BA2A48CC2300E2DF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3235BC2A48CC2300E2DF27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9A3235BE2A48CC2300E2DF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A3235C12A48CC2300E2DF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3235C32A48CC2400E2DF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3235C62A48CC2400E2DF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A3235C82A48CC2400E2DF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3235CD2A48CC2400E2DF27 /* amarisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amarisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A3235D12A48CC2400E2DF27 /* amarisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amarisTests.swift; sourceTree = "<group>"; };
-		9A3235D72A48CC2400E2DF27 /* amarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A3235DB2A48CC2400E2DF27 /* amarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amarisUITests.swift; sourceTree = "<group>"; };
-		9A3235DD2A48CC2400E2DF27 /* amarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A3235EC2A48CE2100E2DF27 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		9A3235EF2A48DBD800E2DF27 /* RecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLoader.swift; sourceTree = "<group>"; };
+		9A3235F12A48DC1800E2DF27 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9A3235F32A48DC3800E2DF27 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		9A3235F52A48DCB400E2DF27 /* RemoteRecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeLoader.swift; sourceTree = "<group>"; };
+		9A3235F72A48E3EF00E2DF27 /* RemoteRecipeSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeSearchLoader.swift; sourceTree = "<group>"; };
+		9A3235F92A48E4AD00E2DF27 /* RemoteRecipeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeItem.swift; sourceTree = "<group>"; };
+		9A3235FC2A48E4FA00E2DF27 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		9A3235FE2A48E9AF00E2DF27 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		9A3236002A48F59E00E2DF27 /* UIView+shimering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shimering.swift"; sourceTree = "<group>"; };
+		9A3236022A48F89200E2DF27 /* RemoteRecipeImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeImageDataLoader.swift; sourceTree = "<group>"; };
+		9A3236052A48FC0000E2DF27 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		9A3236072A49012E00E2DF27 /* RecipeImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImageDataLoader.swift; sourceTree = "<group>"; };
+		9A3236092A490A6500E2DF27 /* SearchRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A3235D42A48CC2400E2DF27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +86,6 @@
 			children = (
 				9A3235B92A48CC2300E2DF27 /* amaris */,
 				9A3235D02A48CC2400E2DF27 /* amarisTests */,
-				9A3235DA2A48CC2400E2DF27 /* amarisUITests */,
 				9A3235B82A48CC2300E2DF27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +95,6 @@
 			children = (
 				9A3235B72A48CC2300E2DF27 /* amaris.app */,
 				9A3235CD2A48CC2400E2DF27 /* amarisTests.xctest */,
-				9A3235D72A48CC2400E2DF27 /* amarisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +102,13 @@
 		9A3235B92A48CC2300E2DF27 /* amaris */ = {
 			isa = PBXGroup;
 			children = (
+				9A3236042A48FBD900E2DF27 /* Composition */,
+				9A3235FB2A48E4D000E2DF27 /* Recipes UI */,
+				9A3235EE2A48DBC600E2DF27 /* Recipe API */,
+				9A3235EB2A48CE0500E2DF27 /* Models */,
 				9A3235BA2A48CC2300E2DF27 /* AppDelegate.swift */,
 				9A3235BC2A48CC2300E2DF27 /* SceneDelegate.swift */,
 				9A3235BE2A48CC2300E2DF27 /* ViewController.swift */,
-				9A3235C02A48CC2300E2DF27 /* Main.storyboard */,
 				9A3235C32A48CC2400E2DF27 /* Assets.xcassets */,
 				9A3235C52A48CC2400E2DF27 /* LaunchScreen.storyboard */,
 				9A3235C82A48CC2400E2DF27 /* Info.plist */,
@@ -113,18 +119,58 @@
 		9A3235D02A48CC2400E2DF27 /* amarisTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A3235D12A48CC2400E2DF27 /* amarisTests.swift */,
+				9A3235EA2A48CDDE00E2DF27 /* Networking tests */,
 			);
 			path = amarisTests;
 			sourceTree = "<group>";
 		};
-		9A3235DA2A48CC2400E2DF27 /* amarisUITests */ = {
+		9A3235EA2A48CDDE00E2DF27 /* Networking tests */ = {
 			isa = PBXGroup;
 			children = (
-				9A3235DB2A48CC2400E2DF27 /* amarisUITests.swift */,
-				9A3235DD2A48CC2400E2DF27 /* amarisUITestsLaunchTests.swift */,
 			);
-			path = amarisUITests;
+			path = "Networking tests";
+			sourceTree = "<group>";
+		};
+		9A3235EB2A48CE0500E2DF27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A3235EC2A48CE2100E2DF27 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A3235EE2A48DBC600E2DF27 /* Recipe API */ = {
+			isa = PBXGroup;
+			children = (
+				9A3235EF2A48DBD800E2DF27 /* RecipeLoader.swift */,
+				9A3235F32A48DC3800E2DF27 /* URLSessionHTTPClient.swift */,
+				9A3235F12A48DC1800E2DF27 /* HTTPClient.swift */,
+				9A3235F52A48DCB400E2DF27 /* RemoteRecipeLoader.swift */,
+				9A3235F72A48E3EF00E2DF27 /* RemoteRecipeSearchLoader.swift */,
+				9A3235F92A48E4AD00E2DF27 /* RemoteRecipeItem.swift */,
+				9A3236022A48F89200E2DF27 /* RemoteRecipeImageDataLoader.swift */,
+				9A3236072A49012E00E2DF27 /* RecipeImageDataLoader.swift */,
+			);
+			path = "Recipe API";
+			sourceTree = "<group>";
+		};
+		9A3235FB2A48E4D000E2DF27 /* Recipes UI */ = {
+			isa = PBXGroup;
+			children = (
+				9A3235FC2A48E4FA00E2DF27 /* RecipesViewController.swift */,
+				9A3235FE2A48E9AF00E2DF27 /* RecipeCell.swift */,
+				9A3236002A48F59E00E2DF27 /* UIView+shimering.swift */,
+				9A3236092A490A6500E2DF27 /* SearchRecipeViewController.swift */,
+			);
+			path = "Recipes UI";
+			sourceTree = "<group>";
+		};
+		9A3236042A48FBD900E2DF27 /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				9A3236052A48FC0000E2DF27 /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Composition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +211,6 @@
 			productReference = 9A3235CD2A48CC2400E2DF27 /* amarisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9A3235D62A48CC2400E2DF27 /* amarisUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A3235E72A48CC2400E2DF27 /* Build configuration list for PBXNativeTarget "amarisUITests" */;
-			buildPhases = (
-				9A3235D32A48CC2400E2DF27 /* Sources */,
-				9A3235D42A48CC2400E2DF27 /* Frameworks */,
-				9A3235D52A48CC2400E2DF27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9A3235D92A48CC2400E2DF27 /* PBXTargetDependency */,
-			);
-			name = amarisUITests;
-			productName = amarisUITests;
-			productReference = 9A3235D72A48CC2400E2DF27 /* amarisUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +225,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					9A3235CC2A48CC2400E2DF27 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 9A3235B62A48CC2300E2DF27;
-					};
-					9A3235D62A48CC2400E2DF27 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 9A3235B62A48CC2300E2DF27;
 					};
@@ -221,7 +245,6 @@
 			targets = (
 				9A3235B62A48CC2300E2DF27 /* amaris */,
 				9A3235CC2A48CC2400E2DF27 /* amarisTests */,
-				9A3235D62A48CC2400E2DF27 /* amarisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +256,10 @@
 			files = (
 				9A3235C72A48CC2400E2DF27 /* LaunchScreen.storyboard in Resources */,
 				9A3235C42A48CC2400E2DF27 /* Assets.xcassets in Resources */,
-				9A3235C22A48CC2300E2DF27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9A3235CB2A48CC2400E2DF27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A3235D52A48CC2400E2DF27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +273,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3235F42A48DC3800E2DF27 /* URLSessionHTTPClient.swift in Sources */,
+				9A3236062A48FC0000E2DF27 /* MainQueueDispatchDecorator.swift in Sources */,
+				9A3236082A49012E00E2DF27 /* RecipeImageDataLoader.swift in Sources */,
+				9A3235F02A48DBD800E2DF27 /* RecipeLoader.swift in Sources */,
+				9A3236032A48F89200E2DF27 /* RemoteRecipeImageDataLoader.swift in Sources */,
 				9A3235BF2A48CC2300E2DF27 /* ViewController.swift in Sources */,
+				9A3235FF2A48E9AF00E2DF27 /* RecipeCell.swift in Sources */,
+				9A3235FD2A48E4FA00E2DF27 /* RecipesViewController.swift in Sources */,
+				9A3235F22A48DC1800E2DF27 /* HTTPClient.swift in Sources */,
+				9A3235FA2A48E4AD00E2DF27 /* RemoteRecipeItem.swift in Sources */,
+				9A3236012A48F59E00E2DF27 /* UIView+shimering.swift in Sources */,
+				9A32360A2A490A6500E2DF27 /* SearchRecipeViewController.swift in Sources */,
 				9A3235BB2A48CC2300E2DF27 /* AppDelegate.swift in Sources */,
 				9A3235BD2A48CC2300E2DF27 /* SceneDelegate.swift in Sources */,
+				9A3235F62A48DCB400E2DF27 /* RemoteRecipeLoader.swift in Sources */,
+				9A3235ED2A48CE2100E2DF27 /* Recipe.swift in Sources */,
+				9A3235F82A48E3EF00E2DF27 /* RemoteRecipeSearchLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3235D22A48CC2400E2DF27 /* amarisTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A3235D32A48CC2400E2DF27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A3235DC2A48CC2400E2DF27 /* amarisUITests.swift in Sources */,
-				9A3235DE2A48CC2400E2DF27 /* amarisUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +308,9 @@
 			target = 9A3235B62A48CC2300E2DF27 /* amaris */;
 			targetProxy = 9A3235CE2A48CC2400E2DF27 /* PBXContainerItemProxy */;
 		};
-		9A3235D92A48CC2400E2DF27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9A3235B62A48CC2300E2DF27 /* amaris */;
-			targetProxy = 9A3235D82A48CC2400E2DF27 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A3235C02A48CC2300E2DF27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A3235C12A48CC2300E2DF27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A3235C52A48CC2400E2DF27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +448,8 @@
 				INFOPLIST_FILE = amaris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +457,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.amaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,9 +478,8 @@
 				INFOPLIST_FILE = amaris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +487,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.amaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -526,42 +536,6 @@
 			};
 			name = Release;
 		};
-		9A3235E82A48CC2400E2DF27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9A3DJ4G5VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.amarisUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = amaris;
-			};
-			name = Debug;
-		};
-		9A3235E92A48CC2400E2DF27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9A3DJ4G5VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.amarisUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = amaris;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,15 +562,6 @@
 			buildConfigurations = (
 				9A3235E52A48CC2400E2DF27 /* Debug */,
 				9A3235E62A48CC2400E2DF27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9A3235E72A48CC2400E2DF27 /* Build configuration list for PBXNativeTarget "amarisUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A3235E82A48CC2400E2DF27 /* Debug */,
-				9A3235E92A48CC2400E2DF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
